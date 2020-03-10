@@ -1,0 +1,23 @@
+<?php
+        //Sum of $basket quantities
+$basket = [
+    [
+        'position' => 'Bread',
+        'quantity' => '1'
+        ],
+    [
+        'position' => 'Beer',
+        'quantity' => '12'
+        ],
+    [
+        'position' => 'Egg',
+        'quantity' => '10'
+        ]
+    ];
+    
+function countBasket($basket) {
+           $sum = array_sum(array_column($basket, 'quantity'));
+           echo $sum;
+        };
+echo countBasket($basket);
+?>
